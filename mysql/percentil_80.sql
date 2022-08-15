@@ -1,9 +1,4 @@
-/* 
-
-Consulta SQL para crear un cuadro de mandos en nuestro BI (para uso de nuestros clientes) que permita el cálculo del percentil 80 (registro que deja por debajo 
-el 80 % de la distribución) del tiempo de espera de los usuarios atendidos mediante nuestro gestor de turnos
-
-*/
+/* Consulta SQL para crear un cuadro de mandos en nuestro BI (para uso de nuestros clientes) que permita el cálculo del percentil 80 (registro que deja por debajo el 80 % de la distribución) del tiempo de espera de los usuarios atendidos mediante nuestro gestor de turnos */
 
 /* Variables iniciales */
 

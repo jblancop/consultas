@@ -1,9 +1,4 @@
-/* 
-
-Consulta SQL para crear un cuadro de mandos en nuestro BI (para uso propio) que permita el análisis de las intervenciones llevadas a cabo por el servicio de 
-atención técnica de nuestra empresa 
-
-*/
+/* Consulta SQL para crear un cuadro de mandos en nuestro BI (para uso propio) que permita el análisis de las intervenciones llevadas a cabo por el servicio de atención técnica de nuestra empresa */
 
 SELECT 
 	i.id AS id_intervention,
@@ -165,10 +160,7 @@ WHERE
 Notas:
 
 [1] Para crear datasets hijos más ligeros (limitados a los últimos 12 meses, por ejemplo) en el BI
-[2] Abierta, asignada, gestionada, en marcha, completa, cancelada, pausada. El BI controla los estados mediante una estructura condicional, de manera que cada 
-	intervención se representa con sólo uno de ellos en cada momento (salvo la pausa, que es aplicable en cualquier etapa del proceso)
-[3] Por limitaciones de la aplicación que gestiona las intervenciones, no es obligatorio asignar una tarea a un técnico concreto aunque luego siempre se 
-	verifique que ha sido completada, pero sin especificar quién lo ha hecho; de ahí que haya que contrastar en qt_field_users si aparecen más 
-	técnicos de campo en t5 que en t3
+[2] Abierta, asignada, gestionada, en marcha, completa, cancelada, pausada. El BI controla los estados mediante una estructura condicional, de manera que cada intervención se representa con sólo uno de ellos en cada momento (salvo la pausa, que es aplicable en cualquier etapa del proceso)
+[3] Por limitaciones de la aplicación que gestiona las intervenciones, no es obligatorio asignar una tarea a un técnico concreto aunque luego siempre se verifique que ha sido completada, pero sin especificar quién lo ha hecho; de ahí que haya que contrastar en qt_field_users si aparecen más técnicos de campo en t5 que en t3
 
 */

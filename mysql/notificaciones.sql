@@ -1,9 +1,4 @@
-/* 
-
-Consulta SQL para crear un cuadro de mandos en nuestro BI (para uso propio) que permita el análisis de las notificaciones (de un tipo específico de todas las 
-posibles, de ahí las restricciones en el WHERE final) que recibe el servicio de atención técnica de nuestra empresa 
-
-*/
+/* Consulta SQL para crear un cuadro de mandos en nuestro BI (para uso propio) que permita el análisis de las notificaciones (de un tipo específico de todas las posibles, de ahí las restricciones en el WHERE final) que recibe el servicio de atención técnica de nuestra empresa */
 
 SELECT
     t.code AS co_ticket, #La notificación se convierte en un tique (consulta agrupada a este nivel) en el sistema
@@ -204,9 +199,7 @@ Notas:
 [1] Para crear datasets hijos más ligeros (limitados a los últimos 12 meses, por ejemplo) en el BI
 [2] Estos parámetros en realidad no varían pero podrían hacerlo si se eliminan las restricciones de la cláusula WHERE; se utilizan a modo de comprobación
 [3] Para la creación de filtros segmentadores que permitan discriminar fácilmente para una determinada categoría de tiendas dentro del BI
-[4] Revisada, escalada, resuelta, cerrada, reabierta y pausada. El BI los controla mediante una estructura condicional, de manera que cada tique sólo se 
-    representa con un único estado en cada momento (salvo la pausa, que es aplicable a un tique en cualquier etapa del proceso)
-[5] t1 crea una tabla en la que se relaciona cada id de tienda con los ids de las categorías que le corresponden, y las siguientes subconsultas (t11 a t14) 
-    relacionan esos ids con sus valores de tipo cadena, entendibles por el usuario final
+[4] Revisada, escalada, resuelta, cerrada, reabierta y pausada. El BI los controla mediante una estructura condicional, de manera que cada tique sólo se representa con un único estado en cada momento (salvo la pausa, que es aplicable a un tique en cualquier etapa del proceso)
+[5] t1 crea una tabla en la que se relaciona cada id de tienda con los ids de las categorías que le corresponden, y las siguientes subconsultas (t11 a t14) relacionan esos ids con sus valores de tipo cadena, entendibles por el usuario final
 
 */

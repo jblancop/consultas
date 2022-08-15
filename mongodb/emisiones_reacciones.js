@@ -1,9 +1,4 @@
-/*
-
-Consulta AF de MongoDB para crear un cuadro de mandos en nuestro BI que permita analizar las reacciones (obtenidas mediante reconocimiento facial) de los 
-usuarios a los vídeos emitidos en las tiendas de nuestros clientes
-
-*/
+/* Consulta AF de MongoDB para crear un cuadro de mandos en nuestro BI que permita analizar las reacciones (obtenidas mediante reconocimiento facial) de los usuarios a los vídeos emitidos en las tiendas de nuestros clientes */
 
 var pipeline = 
 [
@@ -135,8 +130,7 @@ db.sensorsData.aggregate(pipeline)
 Notas:
 
 [1] Se eliminan las demás combinaciones: emisión-emisión (innecesaria), reacción-reacción (innecesaria) y reacción-emisión (redundante)
-[2] Para que un vídeo haya podido captar la atención de un usuario, su emisión ha de haber empezado antes que el fin del seguimiento del usuario y finalizado 
-	después del inicio del seguimiento
+[2] Para que un vídeo haya podido captar la atención de un usuario, su emisión ha de haber empezado antes que el fin del seguimiento del usuario y finalizado después del inicio del seguimiento
 [3] Si no supera el 50 %, se habría de considerar mujer
 
 */

@@ -1,9 +1,4 @@
-/*
-
-Consulta SQL para crear un cuadro de mandos en nuestro BI (para uso de nuestros clientes) que permita analizar los servicios prestados/productos vendidos 
-(gestiones) y el importe total de los mismos para cada tique expedido mediante nuestro gestor de turnos
-
- */
+/* Consulta SQL para crear un cuadro de mandos en nuestro BI (para uso de nuestros clientes) que permita analizar los servicios prestados/productos vendidos (gestiones) y el importe total de los mismos para cada tique expedido mediante nuestro gestor de turnos */
 
 SELECT
     qu.id_code AS co_store, #Información de la tienda

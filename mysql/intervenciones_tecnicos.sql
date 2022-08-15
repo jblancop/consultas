@@ -1,9 +1,4 @@
-/* 
-
-Consulta SQL para crear un cuadro de mandos en nuestro BI (para uso propio) que permita el análisis del rendimiento de los técnicos (tanto propios como externos) 
-implicados en las intervenciones ejecutadas por el servicio de atención al cliente de nuestra empresa
-
-*/
+/* Consulta SQL para crear un cuadro de mandos en nuestro BI (para uso propio) que permita el análisis del rendimiento de los técnicos (tanto propios como externos) implicados en las intervenciones ejecutadas por el servicio de atención al cliente de nuestra empresa */
 
 SELECT
 	concat(u.name, ' ', u.surname) AS na_user, #Técnico que realiza la acción
@@ -112,6 +107,6 @@ ORDER BY
 
 Notas:
 
-[1] Para crear datasets hijos más ligeros (limitados a los últimos 12 meses, por ejemplo) en el BI.
+[1] Para crear datasets hijos más ligeros (limitados a los últimos 12 meses, por ejemplo) en el BI
 
 */

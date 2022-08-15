@@ -1,9 +1,4 @@
-/*
-
-Consulta AF de MongoDB para crear un cuadro de mandos en nuestro BI (para uso de nuestros clientes) que permita analizar las emisiones de vídeo y audio 
-realizadas en sus tiendas.
-
-*/
+/* Consulta AF de MongoDB para crear un cuadro de mandos en nuestro BI (para uso de nuestros clientes) que permita analizar las emisiones de vídeo y audio realizadas en sus tiendas */
 
 var pipeline =
 [
@@ -88,13 +83,10 @@ db.devices.aggregate(pipeline)
 
 Notas:
 
-[1] Si el cliente tiene instalados 5 dispositivos y para cada uno de ellos se encuentran 100 registros en la colección de "sensorsDataHistoric", en esta etapa 
-	se pasaría a tener 500 registros diferentes (en realidad en este punto y para este cliente lo normal es tener millones de registros); de ahí que haya que 
-	agrupar la información
+[1] Si el cliente tiene instalados 5 dispositivos y para cada uno de ellos se encuentran 100 registros en la colección de "sensorsDataHistoric", en esta etapa se pasaría a tener 500 registros diferentes (en realidad en este punto y para este cliente lo normal es tener millones de registros); de ahí que haya que agrupar la información
 [2] A partir de ellos se pueden crear nuevos parámetros haciendo uso del lenguaje de nuestro BI
 [3] La cantidad de registros para este cliente es tan grande que se agrupan por intervalos horarios
-[4] Para cada tienda y dispositivo, por día, se determina cuántas veces se ha realizado una misma emisión -un mismo archivo de audio o vídeo- por cada intervalo 
-	horario
+[4] Para cada tienda y dispositivo, por día, se determina cuántas veces se ha realizado una misma emisión -un mismo archivo de audio o vídeo- por cada intervalo horario
 [5] En ocasiones hay variaciones de un segundo para el mismo tipo de registro
 
 */
